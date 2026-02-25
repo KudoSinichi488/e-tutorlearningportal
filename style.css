@@ -173,7 +173,7 @@ main { flex: 1; }
 }
 
 /* School Year Badge */
-.hero-content .school-year {
+.school-year {
     display: inline-block;
     background: #ffffff;
     color: #5faee3;
@@ -181,14 +181,13 @@ main { flex: 1; }
     border-radius: 25px;
     font-weight: 600;
     margin: 15px auto 20px auto;
-    box-shadow: 0 4px 10px rgba(95,174,227,0.4);
 }
 
 /* Headline */
 .hero-content h1 {
     font-size: 34px;
     margin-bottom: 15px;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4)
 }
 
 /* Description */
@@ -303,10 +302,11 @@ main { flex: 1; }
 .developer-section {
     padding: 60px 20px;
     background:#f7fbff;
-    text-align:center;
+    text-align: center;
     opacity: 0;
     transform: translateY(40px);
     transition: all 0.8s ease-out;
+    
 }
 .developer-section.active {
     opacity: 1;
@@ -336,6 +336,8 @@ main { flex: 1; }
     overflow-x: auto;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+     display: flex;
+     justify-content: center; /* centers horizontally */
 }
 .developer-carousel::-webkit-scrollbar { display: none; }
 
